@@ -44,9 +44,33 @@ let given = 10
 switch given{
 case 10:
     print("10 is given")
+    break
 case 5:
     print("5 is given")
+    break
 default:
     print("0 is given")
+    break
 }
+
+
+// Enums
+enum States {
+    case WillStart
+    case InProgress
+    case Completed
+    case Aborted
+}
+
+// var current = States.InProgress
+// Short hand for this can be as follows
+var current: States?
+current = .InProgress
+
+// Enum cases can be comma seperated
+enum Level {
+    case beginner, intermediate, advanced
+}
+
+// We can also assign values to cases in enums and can acess it using .rawValue
 
