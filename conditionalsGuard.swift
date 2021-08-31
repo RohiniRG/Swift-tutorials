@@ -33,6 +33,15 @@ func numberLargerThanFive(num: Int) -> Bool {
     return true
 }
 
+
+// Ternary operator
+func numGreaterThanFive(a: Int) -> Bool {
+    // return a > 5 ? true : false
+    let res = a > 5 ? true : false
+    return res    
+}
+
+
 // Guard Statements are also used to unwrap optionals
 var text: String?
 text = "Hello World!"

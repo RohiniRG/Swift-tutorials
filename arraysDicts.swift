@@ -1,6 +1,8 @@
+import Foundation
+
 // Arrays
 
-var list = ["Pam", "Jim", "Karen"]
+var list = ["Pam", "Jim", "Karen"] 
 
 var numbers: [Int] = [1, 2, 3]
 
@@ -24,5 +26,15 @@ for i in pets {
 
 for (k, v) in pets {
     print(v)
+}
+
+// Using typealias
+
+typealias Address = [String : String]
+
+var address: Address = ["city": "Pune"]
+
+func validateAddress(add: Address) {
+    
 }
 
